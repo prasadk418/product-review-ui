@@ -1,5 +1,5 @@
 <div style="width:300px;" id="saveProductDiv">
-<form #saveProductForm="ngForm" (ngSubmit)="saveProduct(loginForm)" name="saveProductForm">
+<form #saveProductForm="ngForm" (ngSubmit)="saveProduct(saveProductForm)" name="saveProductForm">
         <div class="productDiv">
         <div class="form-group" [class.has-error]="productnameControl.invalid && productnameControl.dirty">
           <label for="productname">Product Name</label>

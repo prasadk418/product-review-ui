@@ -9,7 +9,8 @@ import { AuthenticationModel } from '../../models/AuthenticationModel';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor(private auth : AuthenticationModel) { }
+  
+  constructor(public auth : AuthenticationModel) { }
 
 logoutUser(){
   this.auth.logout();

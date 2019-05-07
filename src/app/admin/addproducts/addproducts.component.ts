@@ -16,7 +16,7 @@ export class AddproductsComponent implements OnInit {
   }
 
 
-  saveProduct(){
+  saveProduct(form:any){
     alert("Thank u");
   }
 }
