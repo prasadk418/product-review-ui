@@ -1,0 +1,33 @@
+/*.loginForm {
+    left:50%;
+    height:50%;
+}*/
+
+.maindiv{
+    /*background: #2493d4;*/
+  /*  width: 600px;
+    height: 400px;
+    
+    position: absolute;
+    left: 35%;
+    top: 29%;*/
+}
+.loginDiv{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+   /* left: 25%;
+    top: 26%;*/
+
+    left: 38%;
+    top: 37%;
+   /* background: #2493d4;*/
+    
+}
+
+
+/*
+.has-error{
+    color: red;
+    border: 1px solid red;
+}*/

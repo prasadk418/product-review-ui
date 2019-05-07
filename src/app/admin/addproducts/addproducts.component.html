@@ -1,0 +1,28 @@
+<div style="width:300px;" id="saveProductDiv">
+<form #saveProductForm="ngForm" (ngSubmit)="saveProduct(loginForm)" name="saveProductForm">
+        <div class="productDiv">
+        <div class="form-group" [class.has-error]="productnameControl.invalid && productnameControl.dirty">
+          <label for="productname">Product Name</label>
+          <input type="text" name="productname" id="productname" class="form-control" placeholder=""
+           aria-describedby="helpId" [(ngModel)]="productname" #productnameControl="ngModel" required>  
+        </div>
+        <span *ngIf="productnameControl.invalid && productnameControl.dirty">ProductName required</span>
+        <div class="form-group" class="has-error">
+          <label for="password">Product Description</label>
+          <textarea name="productDesc" id="productDesc" [(ngModel)]="productDesc" required></textarea>
+
+          <!--<input type="" name="password" id="password" class="form-control" placeholder="" 
+          aria-describedby="helpId" [(ngModel)]="password" required>  -->
+        </div>
+        <br/>
+        <button type="submit" class="btn btn-primary"  [disabled]="saveProductForm.invalid">
+          Save
+        </button>
+        <button type="reset" class="btn btn-danger">
+          Reset
+        </button>
+        </div>
+</form>
+</div>
+<br/>
+        
