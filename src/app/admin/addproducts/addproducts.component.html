@@ -9,10 +9,7 @@
         <span *ngIf="productnameControl.invalid && productnameControl.dirty">ProductName required</span>
         <div class="form-group" class="has-error">
           <label for="password">Product Description</label>
-          <textarea name="productDesc" id="productDesc" [(ngModel)]="productDesc" required></textarea>
-
-          <!--<input type="" name="password" id="password" class="form-control" placeholder="" 
-          aria-describedby="helpId" [(ngModel)]="password" required>  -->
+          <textarea name="productDesc" id="productDesc" [(ngModel)]="productDesc" required></textarea>       
         </div>
         <br/>
         <button type="submit" class="btn btn-primary"  [disabled]="saveProductForm.invalid">
